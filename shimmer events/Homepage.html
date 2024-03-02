@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Home page</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body{
+background-color:#83C8D1;
+
+} 
+
+.web-teal,.web-hover-teal:hover{color:#fff!important;  background-color:#228693!important }
+
+.parallax {
+  /* The image used */
+  background-image: url('Wedding-lighting-edison-bulbs-banquet-table.jpg');
+
+  /* Full height */
+  <!-- height: 100%; --> 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.social-events{
+        width:100%;
+        margin:auto;
+        text-align:center;
+        padding-top:100px;
+    }
+   
+    .Services{
+	    width: 80%;
+        height: 50%;
+        margin-left: 10%;
+        background-color: #2B3856;
+        background-position: center;
+        display: flex; 
+        justify-content:space-between;
+		text-align:center;
+		
+		
+    }
+   
+    .service{
+        flex-basis:30%;
+        background:white;
+        border-radius:20px;
+        margin-top:4%;
+		margin-bottom: 4%;
+		margin-left:0%;
+		margin-right: 4%;
+        padding:10px 10px;
+        box-sizing:border-box;
+        transition:0.5s;
+		
+    }
+   
+    .service:hover{
+        box-shadow:0 0 30px 0px rgba(0,0,0,1);
+    }
+	
+	/* Slideshow */
+	
+.slideshow{
+   
+min-height:75vh;
+width:100%;
+
+background-position:center;
+background-size:cover;
+position:relative;
+margin-left:40px;
+}
+   
+.maindiv{
+        width: 70%;
+        height: 85%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        
+        transform: translate(-50% ,-50% );
+        background-image: url( "1.jpg");
+        background-size: 100% 100%;
+        animation: slider 20s infinite ;
+    }
+   
+@keyframes slider{
+        0%{background-image: url("2.jpg");}
+        35%{background-image: url( "3.jpg");}
+        75%{background-image: url("4.jpg");}
+		85%{background-image: url("5.jpg");}
+       
+    }
+ </style>
+
+      <link rel="stylesheet" href="Final.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+   </head>
+   <body>
+   
+		 <div class="wrapper">
+                 <input type="checkbox" id="btn" hidden>
+                 <label for="btn" class="menu-btn">
+                 <i class="fas fa-bars"></i>
+                 <i class="fas fa-times"></i>
+                 </label>
+		 <nav id="sidebar">
+            <div class="title">
+               <img src="LOGO.png" alt=" " style="width : 120px;  height:120px;">
+            </div>
+            <ul class="list-items">
+               <li><a target="_self" href="#about"><i class="fa fa-book"></i>   About</a></li>
+               <li><a target="_self" href="#services"><i class="fa fa-users"></i> Services</a></li>
+			   <li><a target="_blank" href="contact.html"><i class="fa fa-phone"></i>   Contact</a></li>
+               <div class="icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+               </div>
+            </ul>
+         </nav>
+	  </div>
+<div class="web-teal" style=" background-color:#228693!important;">
+<center>
+<p>
+<img class="mnlogo" src="mlogo.png" style="width: 80px;height: 70px;"></p> <p style="font-family:  'Pacifico', cursive;font-size: 22px;padding-bottom:15px" >Your Event  Our Magic
+</p>
+</center>
+</div>
+</div>
+ <div class="parallax">
+<h1  style="color: white; padding:350px; margin-left: 160px; font-size: 50px; " >Shimmer Events</h1>
+</div>
+<div style="height:260px;font-size:20px">
+<div id="about">
+<h2 style="text-align:center;white-space:pre-wrap;" class > About</h2>
+</div>
+<p style="text-align:center;white-space:pre-wrap;" class>Shimmer Events is an award-winning, luxury wedding and event planning company for fun-loving,
+ busy couples that value creativity and quality.
+ We draw our inspiration from YOU and your story to create one-of-a-kind weddings and events. 
+ We work collaboratively to ensure your event is cohesive and thoughtful and believe that even 
+ the smallest details can have a huge impact. We pride ourselves on our comprehensive event
+ management so that you can have a flawless and stress-free planning experience! </p>
+</div>
+<section class="social-events">
+<div id="services">
+<div class="Services" >
+    <h2 style="color:white; padding:140px; ">Our Services</h2>
+
+	<div class="service">
+	<a  href = "wedding.html" target="_blank" >
+     <img src="outdoor_daytime.jpg" alt="Wedding" width=300px ></a>
+	 <div class="content">
+	 <h3> Weddings </h3></div>
+    </div>
+	
+	   <div class="service">
+	   <a  href="party.html" target="_blank">
+	     <img src="5.jpg" alt="Event" width=300px height=200px ></a>
+		 <div class="content">
+		 <h3>Parties</h3></div>
+	   </div>
+</div>
+</div>
+</section>
+<br>
+<br>
+
+<section class="slideshow">
+    <div class ="maindiv"></div>
+</section> 
+
+</body>
+</html>
